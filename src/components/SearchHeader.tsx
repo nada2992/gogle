@@ -5,10 +5,12 @@ import SearchBox from './SearchBox'
 import { RiSettings3Line } from 'react-icons/ri'
 import { TbGridDots } from 'react-icons/tb'
 import SearchHeaderOptions from './SearchHeaderOptions'
+import { Suspense } from "react";
 
 
 const SearchHeader = () => {
   return (
+    <Suspense>
     <header className='sticky top-0 bg-white'>
         <div className='flex w-full p-6 items-center justify-between'>
             <Link href="/">
@@ -32,6 +34,7 @@ const SearchHeader = () => {
         </div>
         <SearchHeaderOptions/>
     </header>
+</Suspense>
   )
 }
 

@@ -10,7 +10,7 @@ import { Suspense } from "react";
 
 const SearchHeader = () => {
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
     <header className='sticky top-0 bg-white'>
         <div className='flex w-full p-6 items-center justify-between'>
             <Link href="/">
